@@ -1,0 +1,426 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+	font-family: "Archer-Semibold";
+	src: url("fonts/Archer-Semibold-Pro.eot");
+	src: url("fonts/Archer-Semibold-Pro.eot?") format("embedded-opentype"),
+       url("fonts/Archer-Semibold-Pro.woff") format("woff"),
+       url("fonts/Archer-Semibold-Pro.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Archer-Medium";
+	src: url("fonts/Archer-Medium-Pro.eot");
+	src: url("fonts/Archer-Medium-Pro.eot?") format("embedded-opentype"),
+       url("fonts/Archer-Medium-Pro.woff") format("woff"),
+       url("fonts/Archer-Medium-Pro.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+/* ==========================================================================
+   Some defaults
+   ========================================================================== */
+
+body {
+	background:  #fff;
+	color: #fff;
+}
+
+.clear {
+	clear: both;
+}
+
+.pull-right {
+	float: right !important;
+}
+
+.make-blk-level {
+	display: inline-block;
+	width: 100%;
+}
+
+.hidden-blk {
+	display: none;
+}
+
+/* ==========================================================================
+   Masthead
+   ========================================================================== */
+
+.masthead-slider {
+	width: 100%;
+}
+
+.masthead-slider .banner-info {
+	position: absolute;
+	top: 15%;
+	z-index: 1;
+	background-color: rgba(23, 23, 23, 0.8);
+	padding: 25px 15px;
+}
+
+.masthead-slider .banner-relax {
+	right: 10%;
+	width: 474px;
+}
+
+.masthead-slider  .banner-nature {
+	right: 10%;
+	width: 490px;
+}
+
+.masthead-slider  .banner-romance {
+	left: 12%;
+	width: 375px;
+}
+
+.masthead-slider  .banner-adventure {
+	left: 12%;
+	width: 440px;
+}
+
+
+.masthead-slider .banner-info h3 {
+	font-size: 30px;
+	color: #fff;
+	font-family: Archer-Semibold;
+	padding-bottom: 2px;
+	line-height: 35px;
+}
+
+.masthead-slider .banner-info p {
+	font-size: 20px;
+	font-family: Archer-Medium;
+	margin-bottom: 0;
+	line-height: 24px;
+}
+
+.journey-blks {
+	max-width: 1003px;
+	margin: 0 auto;
+	clear: both;
+	padding: 30px 0 10px;
+}
+
+.journey-blks hr {
+	width: 100%;
+	border-top: #ccc;
+	height: 0;
+	margin:  0 0 20px;
+}
+
+.journey-blks .content-heading {
+	font-size: 25px;
+	color: #000;
+	font-family: Archer-Medium;
+	background: #fff;
+	margin: -41px 0 0;
+	padding: 0 12px 16px 0;
+	float: left;
+}
+
+.journey-blks .journey-type {
+	width: 49.91%;
+	float: left;
+	text-align: center;
+	background: #999999;
+	text-transform: capitalize;
+	font-size: 30px;
+	font-family: Archer-Medium;
+	padding: 20px 0;
+	position: relative;
+	cursor: pointer;
+}
+
+.journey-blks .journey-type-arrow {
+	background: url("img/family.png") no-repeat;
+	width: 14px;
+	height: 17px;
+	position: absolute;
+	top: 42%;
+	right: 7%;
+}
+
+.journey-blks .journey-type-active {
+	background: #000;
+}
+
+.journey-blks .journey-type-active .journey-type-arrow {
+	background: url("img/coupls_arrow.png") no-repeat;
+	width: 17px;
+	height: 14px;
+}
+
+.journey-blks .journey-theme {
+	margin: 0;
+}
+
+.journey-blks .journey-theme li {
+	float: left;
+	margin-right: 1%;
+	position: relative;
+}
+
+.journey-blks .journey-theme li:last-child {
+	margin-right: 0;
+}
+
+.journey-blks .journey-theme li img {
+	width: 100%;
+	display: block;
+}
+
+.journey-blks .journey-theme li .theme-tag-name {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	background-color: rgba(23, 23, 23, 0.8);
+	font-size: 22px;
+	color: #fff;
+	font-family: Archer-Medium;
+	padding: 9px 5% 13px;
+	margin: 0;
+	width: 90%;
+	text-transform: capitalize;
+	font-weight: normal;
+}
+
+.journey-blks .journey-theme li .theme-hover {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	background-color: rgba(23, 23, 23, 0.8);
+	padding: 2% 5%;
+	margin: 0;
+	width: 90%;
+	height: 93%;
+	display: none;
+}
+
+.journey-blks .journey-theme li .theme-hover h4 {
+	color: #fff;
+	font-family: Archer-Medium;
+	font-size: 22px;
+	padding: 9px 0 13px;
+	margin: 0;
+	font-weight: normal;
+	text-transform: capitalize;
+}
+
+.journey-blks .journey-theme li .theme-hover h5 {
+	color: #ccc;
+	font-family: Archer-Medium;
+	font-size: 18px;
+	margin: 0;
+	font-weight: normal;
+}
+
+.journey-blks .select-theme {
+	font-family: Archer-Medium;
+	font-size: 18px;
+	padding: 4px 5px;
+	background: #e9a334;
+	border: 0 none;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+  	border-radius: 3px; 
+  	color: #fff;
+  	margin-top: 8%;
+  	cursor: pointer;
+}
+
+.journey-blks .journey-theme li:hover .theme-tag-name {
+	display: none;
+}
+
+.journey-blks .journey-theme li:hover .theme-hover {
+	display: block;
+}
+
+.journey-blks .itinerary-type {
+	width: 49.91%;
+	float: left;
+	background: #ccc;
+	font-size: 30px;
+	padding: 35px 0;
+}
+
+.journey-blks .itinerary-type-active {
+	background: #000;
+}
+
+.journey-blks .itinerary-type:hover {
+	background: #000;
+}
+
+.journey-blks .itinerary-type ul {
+	padding: 0;
+	list-style: none;
+	margin: 0 5%;
+	display: inline;
+}
+
+.journey-blks .itinerary-type ul li {
+	float: left;
+}
+
+.journey-blks .itinerary-type ul .num-of-days {
+	font-family: Archer-Semibold;
+	font-size: 45px;
+	color: #666666;
+	text-transform: uppercase;
+	margin: 11px 2% 0 4%;
+}
+
+.journey-blks .itinerary-type-active ul .num-of-days {
+	color: #fff;
+}
+
+.journey-blks .itinerary-type:hover .num-of-days {
+	color: #fff;
+}
+
+.journey-blks .itinerary-type ul .itinerary-venues {
+	font-family: Archer-Medium;
+	font-size: 14px;
+	color: #666666;
+	text-transform: uppercase;
+	width: 36%;
+	text-shadow: 0px 1px 1px #b2b2b2;
+	line-height: 17px;
+}
+
+.journey-blks .itinerary-type-active ul .itinerary-venues {
+	color: #fff;
+}
+
+.journey-blks .itinerary-type:hover .itinerary-venues {
+	color: #fff;
+}
+
+.journey-blks .itinerary-type ul .select-itinerary {
+	float: right;
+	margin: 6px 4% 0 0;
+	display: none;
+}
+
+.journey-blks .itinerary-type:hover .select-itinerary {
+	display: block;
+}
+
+.journey-blks .itinerary-type-active:hover .select-itinerary {
+	display: none;
+}
+
+.journey-blks .suggested-itinerary {
+	position: relative;
+	color: #fff;
+}
+
+.journey-blks .suggested-itinerary a {
+    -moz-box-sizing: border-box;
+    display: block;
+    float: right;
+    height: 100%;
+    margin-right: 0;
+    text-decoration: none;
+    width: 100%;
+}
+
+.journey-blks .suggested-itinerary a figure {
+	display: block;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.journey-blks .suggested-itinerary a figure img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-left: 0;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media all and (max-width: 1020px) {
+	.journey-blks .itinerary-type ul .itinerary-venues {
+		display: none;
+	}
+
+	.journey-blks .itinerary-type ul .select-itinerary {
+		margin-top: 0;
+	}
+}
+
+@media all and (max-width: 960px) {
+	.masthead-slider .banner-info {
+		display: none;
+	}
+}
+
+@media all and (max-width: 699px) {
+	.journey-blks .journey-type-arrow {
+	    display: none;  
+	}
+
+	.journey-blks .itinerary-type ul .num-of-days {
+		font-size: 30px;
+	}
+
+	.journey-blks .itinerary-type ul .select-itinerary {
+		margin-top: -4px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.journey-blks .journey-type {
+	    font-size: 20px;
+	}
+
+	.journey-blks .itinerary-type ul .num-of-days {
+		font-size: 20px;
+	}
+
+	.journey-blks .itinerary-type ul .select-itinerary {
+		margin-top: -6px;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.journey-blks .itinerary-type ul .select-itinerary {
+		display: block;
+		float: left;
+	}
+
+	.journey-blks .itinerary-type ul .num-of-days {
+		font-size: 13px;
+	}
+}
+
+@media all and (max-width: 300px) {
+	.journey-blks .journey-type {
+	    font-size: 15px;
+	}
+
+	.journey-blks .journey-theme li .theme-hover h5 {
+		display: none;
+	}
+}
+
+@media all and (max-width: 230px) {
+	.journey-blks .journey-type {
+	    font-size: 12px;
+	}
+}
